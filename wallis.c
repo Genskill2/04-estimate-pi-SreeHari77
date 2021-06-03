@@ -24,11 +24,10 @@ int main(void) {
   }
 }
 
-void wallis_pi( int i){
- float a,b,c;
- for(int n=1;n<=i;n++)
-  a= 4*pow(n,2);
-  b = a-1;
-  c*= a/b;
- return 2*c;
+float wallis_pi(int x){
+ float prod=1;
+ for(int n;n<=x;n++)
+   prod*= 4*n*n/4*n*n-1;
+ return 2*prod;
 }
+ 
