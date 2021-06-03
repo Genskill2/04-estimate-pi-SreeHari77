@@ -54,7 +54,7 @@ float mc_pi(int n){
     float pi= (4.0*count)/n;
     return pi;
 
-      
+}
         
 
 
