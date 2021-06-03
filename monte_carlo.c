@@ -11,13 +11,13 @@ float mc_pi(int n){
    float a,b,c;
 
    for(int i=1; i<=n; i++){
-      float a= frandom();
-      float b= frandom();
-      float c= pow(((a*a)+(b*b)),0.5);
+      a= frandom();
+      b= frandom();
+      c= pow(((a*a)+(b*b)),0.5);
       if(c<=1){
       count+=1;}
     }
-    int pi=4*(float)count/n;
+    float pi= (4*(float)count)/n;
     return pi;
 
 float frandom() {
