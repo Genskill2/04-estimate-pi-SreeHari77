@@ -5,15 +5,6 @@
 
 float wallis_pi(int);
 
-float wallis_pi(int x){
-  float prod=1;
-  for(int n=0; n<=x; n++){
-    prod*= (float)4*n*n/(4*n*n)-1;
-   }
-  float result=2*prod;
-  
-  return result;
-
 int main(void) {
   float pi;
   for (int i=0; i<5; i++) {
@@ -32,5 +23,14 @@ int main(void) {
     }
   }
 }
+
+float wallis_pi(int n){
+  float prod=1;
+  for(int i=0; i<=n; i++){
+    prod*= (float)4*i*i/(4*i*i)-1 ;
+   }
+  float result=2*prod;
+  
+  return result;
 
 
