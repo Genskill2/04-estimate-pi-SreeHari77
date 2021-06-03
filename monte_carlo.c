@@ -51,8 +51,8 @@ float mc_pi(int x){
       if(c<1){
       count++;}
       pi=4*(float)count/total;
-   
-    return pi;
+
+  return pi;
 }
       
         
