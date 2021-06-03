@@ -25,9 +25,9 @@ int main(void) {
 }
 
 float wallis_pi(int n){
-  float prod=1.0;
-  for(int i=1; i<=n; i++){
-    prod*= (float)4.0*i*i/(4.0*i*i)-1.0 ;
+  float prod=1.0000;
+  for(int i = 1; i <= n; i++){
+    prod = prod * (4.0 * i * i) / (4.0 * i * i - 1) ;
    }
   float result= 2.0*prod;
   
