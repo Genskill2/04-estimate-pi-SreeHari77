@@ -29,10 +29,5 @@ float wallis_pi(int x){
      product*=(float)4*n*n/(4*n*n-1);}
         float result=2*prod;
              return result;
-float wallis_pi(int x){
- float product=1;
- for(int n=1;n<=x;n++){
-     product*=(float)4*n*n/(4*n*n-1);}
-        float ret=2*product;
-             return ret;
+
  }
