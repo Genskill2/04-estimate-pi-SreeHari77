@@ -42,12 +42,10 @@ int main(void) {
 
 float mc_pi(int n){
    int count=0;
-   float a,b,c;
-
    for(int i=0; i<=n; i++){
-      a= frandom();
-      b= frandom();
-      c= pow((a*a + b*b),0.5);
+      float a= frandom();
+      float b= frandom();
+      float c= pow((a*a + b*b),0.5);
       if(c<=1){
       count+=1;}
     }
